@@ -1,22 +1,41 @@
-div {
-	background-color: red;
-	margin: 0px;
-	width: 100%;
-	height: 200px;
-	border-width: 10px;
-	padding: 10px;
-	border-color: blue;
-	border-style: solid;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-	margin: 0px;
+	margin: 0;
+	background: white;
+	font-size: 16px;
+	padding: 0;
+	/* font-family: sans-serif; */
+	font-family: 'roboto', sans-serif;
+	font-weight: 400;
 }
 
-html {
-	box-sizing: border-box;
+.navbar {
+	background: #f1f1f1;
+	color: #5f5f5f;
+	height: 100vh;
+	width: 20%;
+	/* border-radius: 0 20px 20px 0; */
+	top: 0;
 }
 
-* {
-	box-sizing: inherit;
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 25px 25px;
+	font-size: 1.2em;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+#home_menu {
+	font-weight: 700;
+	color: #039dfc;
+}
+
+.material-icons-round {
+	vertical-align: sub;
+	margin-right: 10px;
 }
