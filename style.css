@@ -1,41 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import 'normalize.css'; */
 
-body {
+/* ROOT ELEMENT AND DEFAULT CONFIG */
+* {
+	box-sizing: border-box;
 	margin: 0;
-	background: white;
-	font-size: 16px;
 	padding: 0;
-	/* font-family: sans-serif; */
-	font-family: 'roboto', sans-serif;
-	font-weight: 400;
 }
 
+html {
+	background: white;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* NAVIGATION BAR STYLING */
 .navbar {
-	background: #f1f1f1;
-	color: #5f5f5f;
+	background: white;
+	/* box-shadow: 0px 0px 5px #00000055; */
+	border-right: 2px solid #00000022;
 	height: 100vh;
-	width: 20%;
-	/* border-radius: 0 20px 20px 0; */
-	top: 0;
+	width: 14rem;
+	font-size: 1rem;
+	position: fixed;
+	padding: 30px 15px 15px 15px;
 }
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 25px 25px;
-	font-size: 1.2em;
+.navbar ul {
+	list-style-type: none;
 }
 
-li {
-	margin-bottom: 10px;
+.navbar li {
+	display: flex;
+	margin-bottom: 0.7rem;
+	flex-flow: row wrap;
+	align-items: center;
 }
 
-#home_menu {
-	font-weight: 700;
-	color: #039dfc;
-}
-
-.material-icons-round {
-	vertical-align: sub;
+.navbar i {
 	margin-right: 10px;
+}
+
+.navbar li:nth-child(4) {
+	color: #22bbff;
+	font-weight: bold;
+}
+
+/* MAIN CONTENT STYLING */
+.main {
+	background: white;
+	margin-left: 14rem;
+}
+
+h1 {
+	color: black;
+	margin: 0px 15px 5px 15px;
+	padding-top: 25px;
+	border-bottom: 2px solid #00000022;
+}
+
+.com {
+	font-size: 0.6em;
+}
+
+/* TABLE STYLING */
+.table_container {
+	padding: 30px;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	/* box-shadow: -5px 5px 5px #00000015; */
+	font-weight: 600;
+}
+
+thead th:nth-child(1) {
+	width: 30%;
+}
+
+thead th:nth-child(2) {
+	width: 20%;
+}
+
+thead th:nth-child(3) {
+	width: 20%;
+	text-align: right;
+}
+
+thead th:nth-child(4) {
+	width: 30%;
+}
+
+th, td {
+	padding: 15px;
+	text-align: left;
+}
+
+thead {
+	background: linear-gradient(to left bottom, #2277ff, #22bbff, #22ddff);
+	color: white;
+	text-shadow: 1px 1px 1px #00000055;
+}
+
+tbody tr:nth-child(even) {
+	background: #22bbff0e;
+}
+
+tbody td:nth-child(3) {
+	text-align: right;
+}
+
+tbody {
+	border-bottom: 1px solid #00000022;
 }
